@@ -1,4 +1,4 @@
-function signUpUser(firstName, lastName) {
+export function signUpUser(firstName, lastName) {
   return new Promise((resolve) => {
     resolve({ firstName, lastName });
   });
