@@ -4,6 +4,6 @@ const updateStudentGradeByCity = (students, city, newGrades) => students.map((st
     return { ...student, grade: gradeObj.grade };
   }
   return { ...student, grade: 'N/A' };
-});
+}).filter((student) => student.location === city);
 
 export default updateStudentGradeByCity;
